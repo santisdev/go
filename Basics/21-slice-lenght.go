@@ -15,8 +15,8 @@ func main() {
 	printSlice(s)
 
 	// Drop its first two values.
-	s = s[2:]
-	printSlice(s)
+	var f = s[2:]
+	printSlice(f)
 
 	var sl []int
 	fmt.Println(sl, len(sl), cap(sl))
