@@ -34,3 +34,9 @@ func main() {
 // v.Scale(5)  // OK
 // p := &v
 // p.Scale(10) // OK
+
+// Why use pointer receivers?
+// The first reason is so that the method can modify the value that its receiver points to.
+
+// The second is to avoid copying the value on each method call.
+// This can be more efficient if the receiver is a large struct, for example.
